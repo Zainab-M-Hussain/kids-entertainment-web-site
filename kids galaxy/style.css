@@ -1,0 +1,329 @@
+:root {
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50 :#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.navbar-brand .logo {
+    height: 40px;
+    width: 50px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-size: 16px;
+    margin-right: 20px; /* Gap between links */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    font-weight: bold;
+    color: #007bff; /* Change color on hover */
+    text-decoration: dashed;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    background-color: yellow;
+}
+
+.search-container {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#search-results {
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transform: translateY(100%);
+    animation: slide-up 1s ease forwards;
+}
+
+@keyframes slide-up {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.image-container {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.image-backgrounds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-text {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .image-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .image-text {
+        font-size: 1.4rem;
+    }
+}
+/* General Styles */
+body {
+    overflow-x: hidden;
+}
+
+.game-container {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.game-container.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.game-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.game-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.main-image, .game {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.game-image-backgrounds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gg-image, .bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-text {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Responsive Text */
+@media (min-width: 768px) {
+    .image-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .image-text {
+        font-size: 1.4rem;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+    /* padding-top: 50px; */
+}
+
+.video-container {
+    margin-bottom: 30px;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.video-container.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.video-wrapper {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.video-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.main-video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.video-text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+@media (min-width: 768px) {
+    .video-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .video-text {
+        font-size: 1.4rem;
+    }
+}
+/* Shake animation for the heading */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+#heading {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+/* Image popup effect on hover */
+.image1-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.game-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover .game-image {
+    transform: scale(1.2);
+}
+
+/* Button shake on hover */
+@keyframes buttonShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+.shake-button:hover {
+    animation: buttonShake 0.3s;
+}
+
+

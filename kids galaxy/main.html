@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidsGalaxy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.webp" alt="KidsGalaxy" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="main.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="storybooks.html">Storybooks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="crafts.html">Crafts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="puzzles.html">Puzzles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pet-care.html">Pet Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="learning.html">Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contests.html">Contests</a></li>
+                </ul>
+                <form class="d-flex search-container">
+                    <input class="form-control me-2" type="search" id="search-bar" placeholder="Search for a page..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="button" onclick="searchPage()">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="search-results"></div>
+    <center><h1 style="color: blanchedalmond;"><b>KidsGalaxy</b></h1></center>
+    <div class="container main-container">
+        <div class="row">
+            <!-- First Image Container -->
+            <div class="col-md-4 image-container">
+                <div class="image-wrapper">
+                    <img src="images/img1h.jpg" alt="Image 1" class="main-image">
+                    <div class="image-backgrounds">
+                        <img src="images/img1.1hb.jpg" alt="Background 1" class="bg-image">
+                        <img src="images/img1.2hb.jpg" alt="Background 2" class="bg-image">
+                        <img src="images/img1.3hb.jpg" alt="Background 3" class="bg-image">
+                    </div>
+                </div>
+                <p class="image-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nulla incidunt. Odit perspiciatis aut velit!</p>
+            </div>
+    
+            <!-- Second Image Container -->
+            <div class="col-md-4 image-container">
+                <div class="image-wrapper">
+                    <img src="images/img2h.jpg" alt="Image 2" class="main-image">
+                    <div class="image-backgrounds">
+                        <img src="images/img2.1hb.jpg" alt="Background 1" class="gg-image">
+                        <img src="images/img2.2hb.jpg" alt="Background 2" class="gg-image">
+                        <img src="images/img2.3hb.jpg" alt="Background 3" class="gg-image">
+                    </div>
+                </div>
+                <p class="image-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore autem debitis voluptate suscipit qui?</p>
+            </div>
+    
+            <!-- Third Image Container -->
+            <div class="col-md-4 image-container">
+                <div class="image-wrapper">
+                    <img src="images/img3h.jpg" alt="Image 3" class="main-image">
+                    <div class="image-backgrounds">
+                        <img src="images/img3.1hb.webp" alt="Background 1" class="bg-image">
+                        <img src="images/img3.2hb.jpg" alt="Background 2" class="bg-image">
+                        <img src="images/img2.2hb.jpg" alt="Background 3" class="bg-image">
+                    </div>
+                </div>
+                <p class="image-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quo esse, autem expedita perspiciatis sit.</p>
+            </div>
+            <hr>
+            <div class="container main-container">
+                <div class="row">
+                    <center><h1 style="color: blanchedalmond;margin-bottom: 20px;"><b>our most played games..</b></h1></center>
+                    <!-- First game Container -->
+                    <div class="col-md-6 game-container">
+                        <div class="game-wrapper">
+                            <img src="images/Temple_Run_2.png" alt="Image 1" class="main-image">
+                            <div class="game-image-backgrounds">
+                                <img src="images/templerun 2.webp" alt="Background 1" class="gg-image">
+                                <img src="images/tr2_0.webp" alt="Background 2" class="gg-image">
+                                <img src="images/image.png" alt="Background 3" class="gg-image">
+                            </div>
+                        </div>
+                        <p class="image-text"> temple run 2<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nulla incidunt. Odit perspiciatis aut velit!</p>
+                    </div>
+            
+                    <!-- Second game Container -->
+                    <div class="col-md-6 game-container">
+                        <div class="game-wrapper">
+                            <img src="images/ss1.png" alt="Image 2" class="game">
+                            <div class="game-image-backgrounds">
+                                <img src="images/ss2.png" alt="Background 1" class="bg-image">
+                                <img src="images/ss3.png" alt="Background 2" class="bg-image">
+                                <img src="images/ss4.png" alt="Background 3" class="bg-image">
+                            </div>
+                        </div>
+                        <p class="image-text">Subway Surfurs <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore autem debitis voluptate suscipit qui?</p>
+                    </div>
+            
+        </div>
+    </div>
+    <hr>
+    <center><h1 style="color: blanchedalmond;">Our most trendy videos..</h1></center>
+    <div class="container">
+        <div class="row">
+            <!-- Video 1 -->
+            <div class="col-md-6 col-lg-3 video-container">
+                <div class="video-wrapper">
+                    <video src="images/1.mp4" preload="auto" controls class="main-video"></video>
+                </div>
+                <p class="video-text"><b>maddam sir</b></p>
+            </div>
+    
+            <!-- Video 2 -->
+            <div class="col-md-6 col-lg-3 video-container">
+                <div class="video-wrapper">
+                    <video src="images/2.mp4" preload="auto" controls class="main-video"></video>
+                </div>
+                <p class="video-text"><b>fairy tales.</b></p>
+            </div>
+    
+            <!-- Video 3 -->
+            <div class="col-md-6 col-lg-3 video-container">
+                <div class="video-wrapper">
+                    <video src="images/3.mp4" preload="auto" controls class="main-video"></video>
+                </div>
+                <p class="video-text"><b>motu patlu</b></p>
+            </div>
+    
+            <!-- Video 4 -->
+            <div class="col-md-6 col-lg-3 video-container">
+                <div class="video-wrapper">
+                    <video src="images/4.mp4" preload="auto" controls class="main-video"></video>
+                </div>
+                <p class="video-text"><b>poems</b></p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+

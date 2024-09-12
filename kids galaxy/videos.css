@@ -1,0 +1,113 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+#nav{
+    position: fixed;
+}
+.navbar-brand .logo {
+    height: 40px;
+    width: 50px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-size: 16px;
+    margin-right: 20px; /* Gap between links */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    font-weight: bold;
+    color: #007bff; /* Change color on hover */
+    text-decoration: dashed;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    background-color: yellow;
+}
+
+.search-container {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#search-results {
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    height: calc(100vh - 56px); /* Adjusting height to account for the navbar */
+    position: fixed;
+    top: 56px; /* Push down by the height of the navbar */
+    left: 0;
+    padding-top: 20px;
+}
+
+.sidebar .nav-link {
+    font-size: 18px;
+    color: #000;
+}
+
+.sidebar .nav-link:hover {
+    color: #007bff;
+}
+
+.main-content {
+    margin-left: 200px; /* Ensure main content starts after the sidebar */
+    margin-top: 20px; /* Adjust top margin to avoid overlap */
+}
+
+.video-container {
+    padding-bottom: 15px;
+}
